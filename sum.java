@@ -5,10 +5,10 @@ public class sum {
         int sum=0 ;
         int n =a.length;
         int count;
-        for(int i=0;i<n;i++){
-            for(int j=1;j<n-1;j++){
+        for(int i=0;i<n-1;i++){
+            for(int j=1;j<n;j++){
                 count= a[i]+a[j];
-                if(count== target){
+                if(count== target && a[i]!=a[j]){
                     System.out.println(a[i]+" "+a[j]);
                 }
             }
