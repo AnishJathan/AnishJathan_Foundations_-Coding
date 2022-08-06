@@ -6,10 +6,11 @@ public class sum {
         int n =a.length;
         int count;
         for(int i=0;i<n-1;i++){
-            for(int j=1;j<n;j++){
+            for(int j=i+1;j<n ;j++){
                 count= a[i]+a[j];
                 if(count== target && a[i]!=a[j]){
                     System.out.println(a[i]+" "+a[j]);
+                    break;
                 }
             }
         }
